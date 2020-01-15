@@ -1,0 +1,9 @@
+F:\InmarCodeTest\Models\bin\Debug\netstandard2.0\Models.deps.json
+F:\InmarCodeTest\Models\bin\Debug\netstandard2.0\Models.dll
+F:\InmarCodeTest\Models\bin\Debug\netstandard2.0\Models.pdb
+F:\InmarCodeTest\Models\obj\Debug\netstandard2.0\Models.csprojAssemblyReference.cache
+F:\InmarCodeTest\Models\obj\Debug\netstandard2.0\Models.csproj.CoreCompileInputs.cache
+F:\InmarCodeTest\Models\obj\Debug\netstandard2.0\Models.AssemblyInfoInputs.cache
+F:\InmarCodeTest\Models\obj\Debug\netstandard2.0\Models.AssemblyInfo.cs
+F:\InmarCodeTest\Models\obj\Debug\netstandard2.0\Models.dll
+F:\InmarCodeTest\Models\obj\Debug\netstandard2.0\Models.pdb
