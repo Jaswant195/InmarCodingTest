@@ -17,6 +17,7 @@ namespace RetailSkuTest.IntegrationTest
 
         ILocationRepository locationRepository;
         public IConfiguration configuration;
+
         [SetUp]
         public void SetUp()
         {
