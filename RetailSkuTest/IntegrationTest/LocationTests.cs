@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Interface;
 using DataAccessLayer.Utility;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
 using RetailSkuAPI.Controllers;
@@ -15,13 +16,14 @@ namespace RetailSkuTest.IntegrationTest
     {
 
         ILocationRepository locationRepository;
-        public readonly IConfiguration configuration;
+        public IConfiguration configuration;
         [SetUp]
         public void SetUp()
         {
             var builder = new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .Build();
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            this.configuration = builder.Build();
 
             this.locationRepository = new LocationRepository(configuration);
         }

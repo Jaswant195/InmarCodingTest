@@ -43,6 +43,23 @@ namespace DataAccessLayer.Utility
             return lstLocation;
         }
 
+        public async Task<Location> GetLocationsById(int locationId)
+        {
+            Location objLocation;
+
+            using (IDbConnection con = this.Connection)
+            {
+                string sQuery = "Select LocationId, LocationName from Location where LocationId = " + locationId;
+
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+
+                objLocation = await con.QueryFirstAsync<Location>(sQuery).ConfigureAwait(true);
+            }
+
+            return objLocation;
+        }
+
         public async Task<int> AddLocation(Location location)
         {
             using (IDbConnection con = this.Connection)

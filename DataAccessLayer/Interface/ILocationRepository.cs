@@ -9,6 +9,7 @@ namespace DataAccessLayer.Interface
     public interface ILocationRepository
     {
         Task<IEnumerable<Location>> GetAllLocations();
+        Task<Location> GetLocationsById(int locationId);
         Task<int> AddLocation(Location location);
         Task<int> UpdateLocation(Location location);
         Task<int> DeleteLocation(int locationId);

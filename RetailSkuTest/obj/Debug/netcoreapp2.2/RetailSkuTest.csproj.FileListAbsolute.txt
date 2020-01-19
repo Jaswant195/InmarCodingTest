@@ -26,3 +26,4 @@ F:\InmarCodeTest\RetailSkuTest\bin\Debug\netcoreapp2.2\RetailSkuTest.pdb
 F:\InmarCodeTest\RetailSkuTest\obj\Debug\netcoreapp2.2\RetailSkuTest.dll
 F:\InmarCodeTest\RetailSkuTest\obj\Debug\netcoreapp2.2\RetailSkuTest.pdb
 F:\InmarCodeTest\RetailSkuTest\bin\Debug\netcoreapp2.2\appsettings.json
+F:\InmarCodeTest\RetailSkuTest\bin\Debug\netcoreapp2.2\appsettings.Development.json

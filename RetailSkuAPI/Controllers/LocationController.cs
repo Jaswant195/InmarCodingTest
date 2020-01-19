@@ -10,7 +10,7 @@ using RetailSkuApi.Models;
 namespace RetailSkuAPI.Controllers
 {
     [ApiController]
-    [Authorize]
+    ////[Authorize]
     public class LocationController : ControllerBase
     {
         private readonly ILocationRepository locationRepository;
@@ -26,6 +26,21 @@ namespace RetailSkuAPI.Controllers
             try
             {
                 var result = await this.locationRepository.GetAllLocations();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/v1/location/{locationId}")]
+        public async Task<IActionResult> GetLocationById(int locationId)
+        {
+            try
+            {
+                var result = await this.locationRepository.GetLocationsById(locationId);
                 return Ok(result);
             }
             catch (Exception ex)
